@@ -12,23 +12,36 @@ function salvar() {
 function renderizar(filtro = "") {
     tabela.innerHTML = "";
 
-    pacientes
-        .filter(p => p.nome.toLowerCase().includes(filtro.toLowerCase()))
-        .forEach((p, index) => {
-            const tr = document.createElement("tr");
+    const filtrados = pacientes.filter(p =>
+        p.nome.toLowerCase().includes(filtro.toLowerCase())
+    );
 
-            tr.innerHTML = `
-        <td>${p.nome}</td>
-        <td>${p.idade}</td>
-        <td>${p.cpf || "-"}</td>
-        <td>
-          <button onclick="editar(${index})">Editar</button>
-          <button onclick="remover(${index})">Excluir</button>
+    if (filtrados.length === 0) {
+        tabela.innerHTML = `
+      <tr>
+        <td colspan="4" style="text-align:center;">
+          Nenhum paciente cadastrado
         </td>
-      `;
+      </tr>
+    `;
+        return;
+    }
 
-            tabela.appendChild(tr);
-        });
+    filtrados.forEach((p, index) => {
+        const tr = document.createElement("tr");
+
+        tr.innerHTML = `
+      <td>${p.nome}</td>
+      <td>${p.idade}</td>
+      <td>${p.cpf || "-"}</td>
+      <td>
+        <button onclick="editar(${index})">Editar</button>
+        <button onclick="remover(${index})">Excluir</button>
+      </td>
+    `;
+
+        tabela.appendChild(tr);
+    });
 }
 
 function editar(index) {
@@ -66,7 +79,6 @@ form.addEventListener("submit", (e) => {
     form.reset();
 });
 
-/* 🔍 busca dinâmica */
 busca.addEventListener("input", () => {
     renderizar(busca.value);
 });
