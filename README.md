@@ -35,7 +35,7 @@ Desenvolver um sistema completo de CRUD para praticar lógica de programação, 
 
 ## 🌐 Acesse o projeto
 
-🔗 (https://michelefranciscadealmeida.github.io/Sistema-de-Gest-o-de-Pacientes-Front-End-/)
+🔗 (https://michelefranciscadealmeida.github.io/Sistema-de-Gestao-de-Pacientes-Front-End/)
 
 ---
 
