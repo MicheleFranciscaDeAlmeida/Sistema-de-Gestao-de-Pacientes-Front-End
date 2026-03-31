@@ -42,23 +42,7 @@ function renderizar(filtro = "") {
 
         tabela.appendChild(tr);
     });
-  }
-
-    filtrados.forEach((p, index) => {
-        const tr = document.createElement("tr");
-
-        tr.innerHTML = `
-      <td>${p.nome}</td>
-      <td>${p.idade}</td>
-      <td>${p.cpf || "-"}</td>
-      <td>
-        <button onclick="editar(${index})">Editar</button>
-        <button onclick="remover(${index})">Excluir</button>
-      </td>
-    `;
-
-        tabela.appendChild(tr);
-    });
+}
 
 function editar(index) {
     const paciente = pacientes[index];
