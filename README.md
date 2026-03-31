@@ -35,13 +35,14 @@ Desenvolver um sistema completo de CRUD para praticar lógica de programação, 
 
 ## 🌐 Acesse o projeto
 
-🔗 (coloque aqui o link do GitHub Pages)
+🔗 (https://michelefranciscadealmeida.github.io/Sistema-de-Gest-o-de-Pacientes-Front-End-/)
 
 ---
 
 ## 📸 Preview
 
-*(adicione aqui uma imagem ou GIF do sistema)*
+![Sistema de Gestão de Pacientes](./assets/sistemagestao.png)
+![Sistema de Gestão de Pacientes](./assets/sistemagestao1.png)
 
 ---
 
