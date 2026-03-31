@@ -1,0 +1,155 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #c8d8c0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.card {
+    background: #e9ecef;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #a8d0d6;
+}
+
+/* 🔍 busca */
+.busca {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+/* botão */
+.btn {
+    padding: 12px;
+    width: 220px;
+    background: #0b3d91;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+/* tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 12px;
+}
+
+th {
+    background: #0b3d91;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+td button {
+    margin-right: 5px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+td button:first-child {
+    background: #f0ad4e;
+}
+
+td button:last-child {
+    background: #d9534f;
+    color: white;
+}
+
+/* 📱 RESPONSIVO */
+@media (max-width: 768px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    th {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        background: white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+    }
+
+    td::before {
+        font-weight: bold;
+    }
+
+    td:nth-child(1)::before {
+        content: "Nome";
+    }
+
+    td:nth-child(2)::before {
+        content: "Idade";
+    }
+
+    td:nth-child(3)::before {
+        content: "CPF";
+    }
+
+    td:nth-child(4)::before {
+        content: "Ações";
+    } }
