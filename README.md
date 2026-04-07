@@ -34,7 +34,7 @@ Durante o desenvolvimento, foram trabalhados:
 - Noções de UX/UI
 
 ## 🔗 Status do projeto
-🚧 Em desenvolvimento / concluído (ajusta aqui)
+Projeto concluído
 
 ---
 
